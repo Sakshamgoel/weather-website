@@ -10,6 +10,7 @@ const publicDirectoryPath = path.join(__dirname, '../public');
 const templatesPath = path.join(__dirname, '../templates/views');
 const partialsPath = path.join(__dirname, '../templates/partials');
 
+
 // Setting up handlebars
 app.set('view engine', 'hbs'); 
 app.set('views', templatesPath);
