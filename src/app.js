@@ -67,7 +67,8 @@ app.get('/weather', (req, res) => {
                 });
             }
             const message = forecastData.weather_descriptions[0] + '. It is currently '
-                + forecastData.temperature + ' degrees outside.';
+                + forecastData.temperature + ' degrees outside. It feels like '
+                + forecastData.feelslike + ' degrees.';
             res.send({
                 forecast: message,
                 location,
